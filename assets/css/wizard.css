@@ -1,52 +1,52 @@
 /* Custom styles for the wizard */
-.wizard-steps .nav-link {
-  border-radius: 0.5rem;
-  transition: all 0.3s ease;
+.wizard-steps_v1 .nav-link_v1 {
+  border-radius: 0.5rem_v1;
+  transition: all 0.3s_v1 ease;
 }
 
-.wizard-steps .nav-link:hover:not(.active) {
-  background-color: rgba(var(--bs-primary-rgb), 0.05);
+.wizard-steps_v1 .nav-link_v1:hover:not(.active_v1) {
+  background-color: rgba(var(--bs-primary-rgb), 0.05_v1);
 }
 
-.wizard-steps .nav-link.active {
-  background-color: rgba(var(--bs-primary-rgb), 0.1);
+.wizard-steps_v1 .nav-link_v1.active_v1 {
+  background-color: rgba(var(--bs-primary-rgb), 0.1_v1);
   color: var(--bs-primary);
 }
 
-.wizard-step-icon {
-  transition: all 0.3s ease;
-  width: 3.5rem;
-  height: 3.5rem;
+.wizard-step-icon_v1 {
+  transition: all 0.3s_v1 ease;
+  width: 3.5rem_v1;
+  height: 3.5rem_v1;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.05_v1);
 }
 
-.wizard-connector {
+.wizard-connector_v1 {
   position: absolute;
   height: 2px;
-  background-color: rgba(255, 255, 255, 0.1);
-  top: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.1_v1);
+  top: 2.5rem_v1;
   width: 50%;
   right: 0;
   z-index: -1;
 }
 
-.nav-item.position-relative {
+.nav-item_v1.position-relative_v1 {
   z-index: 1;
 }
 
 /* Completed step styles */
-.nav-link.completed {
-  background-color: rgba(var(--bs-success-rgb), 0.1);
+.nav-link_v1.completed_v1 {
+  background-color: rgba(var(--bs-success-rgb), 0.1_v1);
   color: var(--bs-success);
 }
 
-.nav-link.completed .wizard-step-icon {
+.nav-link_v1.completed_v1 .wizard-step-icon_v1 {
   background-color: #2db57c !important;
 }
 
-.nav-link.completed .wizard-step-icon i {
+.nav-link_v1.completed_v1 .wizard-step-icon_v1 i {
   color: #fff !important;
 }

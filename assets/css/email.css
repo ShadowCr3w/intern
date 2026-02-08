@@ -1,29 +1,29 @@
-.email-details-container {
+.email-details-container_v1 {
   min-height: calc(100vh - 300px);
 }
 
-.mail-nav-items-container {
+.mail-nav-items-container_v1 {
   min-width: 160px;
 }
 
-.email-list {
+.email-list_v1 {
   max-width: 340px;
 }
-.email-list .email-list-item {
+.email-list_v1 .email-list-item_v1 {
   max-width: 210px;
 }
-.email-list .email-text {
+.email-list_v1 .email-text_v1 {
   min-width: 210px;
   max-width: 210px;
 }
-.email-list .email-date {
+.email-list_v1 .email-date_v1 {
   min-width: 90px;
   max-width: 90px;
 }
 
-.email-accordion .accordion-button {
+.email-accordion_v1 .accordion-button_v1 {
   cursor: pointer;
 }
-.email-accordion .accordion-button:after {
+.email-accordion_v1 .accordion-button_v1:after {
   display: none;
 }
