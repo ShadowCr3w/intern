@@ -1,0 +1,41 @@
+// Variables
+@import "variables.scss";
+
+// Email Container
+.email-details-container {
+  min-height: calc(100vh - 300px);
+}
+
+// Nav Items Container
+.mail-nav-items-container {
+  min-width: 160px;
+}
+
+// Email List
+.email-list {
+  max-width: 340px;
+
+  .email-list-item {
+    max-width: 210px;
+  }
+
+  .email-text {
+    min-width: 210px;
+    max-width: 210px;
+  }
+
+  .email-date {
+    min-width: 90px;
+    max-width: 90px;
+  }
+}
+
+.email-accordion {
+  .accordion-button {
+    cursor: pointer;
+
+    &:after {
+      display: none;
+    }
+  }
+}
