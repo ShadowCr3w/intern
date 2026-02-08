@@ -1,0 +1,180 @@
+// Custom Colors
+$rgba5: rgba(255, 255, 255, 0.05);
+$rgba10: rgba(255, 255, 255, 0.1);
+$rgba15: rgba(255, 255, 255, 0.15);
+$rgba20: rgba(255, 255, 255, 0.2);
+$rgba30: rgba(255, 255, 255, 0.3);
+$rgba40: rgba(255, 255, 255, 0.4);
+$rgba50: rgba(255, 255, 255, 0.5);
+$rgba60: rgba(265, 255, 255, 0.6);
+$rgba70: rgba(255, 255, 255, 0.7);
+
+$rgba-dark-5: rgba(0, 0, 0, 0.05);
+$rgba-dark-10: rgba(0, 0, 0, 0.1);
+$rgba-dark-15: rgba(0, 0, 0, 0.15);
+$rgba-dark-20: rgba(0, 0, 0, 0.2);
+$rgba-dark-30: rgba(0, 0, 0, 0.3);
+$rgba-dark-40: rgba(0, 0, 0, 0.4);
+$rgba-dark-50: rgba(0, 0, 0, 0.5);
+
+$border-bg: $rgba10;
+$border-bg-dark: $rgba-dark-10;
+
+$body-bg: $rgba15;
+$body-bg-dark: #140751;
+$body-bg-light: #e7ecf2;
+
+// Bootstrap Theme Colors
+// Grey Variables
+$white: #ffffff !default;
+$gray-100: #f8f9fc !default;
+$gray-200: #f3f5f9 !default;
+$gray-300: #e2e5ec !default;
+$gray-400: #ccd2da !default;
+$gray-500: #9ea7b1 !default;
+$gray-600: #6e7985 !default;
+$gray-700: #41505f !default;
+$gray-800: #313c47 !default;
+$gray-900: #212830 !default;
+$black: #111418 !default;
+
+// Color Variables
+$primary: #7744D9;
+$secondary: #de77b1;
+$danger: #f9537b;
+$success: #0ec95a;
+$info: #33b9e9;
+$warning: #dec21c;
+$light: #b7b0ec;
+$dark: #192633;
+
+$theme-colors: ("primary": $primary,
+  "secondary": $secondary,
+  "danger": $danger,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "light": $light,
+  "dark": $dark,
+);
+
+// Subtle Colors
+$primary-bg-subtle: rgb(151 167 241 / 20%);
+$secondary-bg-subtle: rgb(204 210 217 / 10%);
+$danger-bg-subtle: rgb(255 90 90 / 20%);
+$success-bg-subtle: rgb(98 198 89 / 20%);
+$info-bg-subtle: rgb(25 147 224 / 25%);
+$warning-bg-subtle: rgb(255 255 0 / 15%);
+$light-bg-subtle: rgb(174 203 231 / 20%);
+$dark-bg-subtle: rgb(25 38 51 / 20%);
+
+// Negative Margins
+$enable-negative-margins: true !default;
+
+// CSS Grid
+$enable-cssgrid: true;
+
+// Font Size
+$font-size-base: 0.925rem !default;
+
+// Font Color
+$body-color: #dcd6f6;
+$body-color-dark: #131722;
+$body-emphasis-color: #c5cde4;
+
+// Link Color
+$link-color: #20ff7a;
+$link-hover-color: darken($link-color, 15%);
+
+// Border Color
+$border-color: $border-bg;
+$border-color-dark: $gray-400;
+
+// Inputs
+$form-bg: $rgba5;
+$form-focus-bg: $rgba15;
+$input-border-color: $rgba30;
+$input-color: $white;
+$input-group-addon-bg: $rgba5 !default;
+$input-disabled-bg: $rgba-dark-10 !default;
+$form-select-disabled-bg: $rgba-dark-10 !default;
+$input-placeholder-color: $rgba30;
+
+// Dropdowns
+$dropdown-link-hover-bg: #d4dbe7;
+$dropdown-border-color: $gray-200;
+$dropdown-link-active-bg: $gray-100;
+$dropdown-link-active-color: $gray-900;
+
+// Card
+$card-border-radius: 0.5rem;
+$card-border-color: $rgba10;
+$card-cap-bg: $rgba5;
+$card-cap-padding-y: 0.725rem;
+
+// Table
+$table-bg: $rgba5;
+$table-border-color: $border-bg;
+$table-striped-bg: $rgba15;
+$table-hover-bg: $rgba-dark-10;
+$table-color: #cad4f1;
+
+// Modal
+$modal-backdrop-opacity: 0.7 !default;
+
+// Popover
+$popover-border-radius: 0.25rem;
+$popover-header-padding-y: 0.8rem !default;
+$popover-header-bg: $body-bg-dark;
+$popover-bg: $body-bg-dark;
+
+// Dropdowns
+$dropdown-bg: $body-bg-dark;
+$dropdown-link-hover-bg: #1639a2;
+$dropdown-link-active-bg: #2346b2;
+$dropdown-divider-bg: $rgba20;
+
+// Offcanvas
+$offcanvas-bg-color: rgba(0, 0, 0, .7);
+
+// Tooltips
+$tooltip-border-radius: 0.25rem;
+$tooltip-bg: $black;
+$tooltip-color: $white;
+
+// Accordion
+$accordion-bg: $rgba5;
+$accordion-button-active-bg: $rgba5;
+$accordion-button-active-color: $white;
+$accordion-border-color: $border-bg-dark;
+
+// List Group
+$list-group-bg: $rgba10;
+$list-group-hover-bg: $rgba15;
+$list-group-active-bg: $rgba-dark-5;
+$list-group-action-active-bg: $rgba-dark-10;
+$list-group-active-color: $white;
+
+// Custom SCSS Mixins
+
+// Transition
+@mixin transition($transition-property, $transition-time, $method) {
+  -webkit-transition: $transition-property $transition-time $method;
+  -moz-transition: $transition-property $transition-time $method;
+  -ms-transition: $transition-property $transition-time $method;
+  -o-transition: $transition-property $transition-time $method;
+  transition: $transition-property $transition-time $method;
+}
+
+// Border Radius
+@mixin roundedCorners($size) {
+  -webkit-border-radius: $size + px;
+  -moz-border-radius: $size + px;
+  border-radius: $size + px;
+}
+
+@mixin roundedCornersAll($size1, $size2, $size3, $size4) {
+  -webkit-border-radius: $size1 $size2 $size3 $size4;
+  -moz-border-radius: $size1 $size2 $size3 $size4;
+  border-radius: $size1 $size2 $size3 $size4;
+}
